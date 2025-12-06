@@ -1,0 +1,41 @@
+.hero {
+  background: $color-muted;
+  .hero__inner {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  @include respond(md) {
+    .hero__inner {
+      padding: 6rem 0;
+      text-align: left;
+    }
+  }
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: $space-md;
+  margin-top: $space-md;
+}
+.card {
+  background: $color-white;
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  .card__img {
+    height: 180px;
+    object-fit: cover;
+  }
+  .card__body {
+    padding: $space-md;
+  }
+  .card__title {
+    font-weight: 600;
+  }
+  .card__meta {
+    color: darken($color-text, 20%);
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+  }
+}

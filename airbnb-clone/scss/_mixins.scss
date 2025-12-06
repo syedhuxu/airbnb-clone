@@ -1,0 +1,22 @@
+@function rem($px) {
+  @return #{$px / 16} * 1rem;
+}
+
+@mixin respond($bp) {
+  @if $bp == md {
+    @media (min-width: $bp-md) {
+      @content;
+    }
+  } @else if $bp == lg {
+    @media (min-width: $bp-lg) {
+      @content;
+    }
+  }
+}
+
+@mixin container {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-md;
+}

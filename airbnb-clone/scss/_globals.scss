@@ -1,0 +1,19 @@
+.container {
+  @include container;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin-bottom: $space-md;
+}
+.section {
+  padding: $space-lg 0;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: transparent;
+  cursor: pointer;
+}
