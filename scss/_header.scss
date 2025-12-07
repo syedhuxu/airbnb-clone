@@ -1,23 +1,19 @@
 .site-header {
   border-bottom: 1px solid #eee;
-  .container {
-    display: flex;
-    align-items: center;
-    gap: $space-md;
-    padding: $space-sm 0;
-  }
-  .logo {
-    font-weight: 700;
-  }
-  .nav {
-    margin-left: auto;
-    display: flex;
-    gap: $space-sm;
-    align-items: center;
-  }
-  @include respond(md) {
-    .nav {
-      gap: $space-md;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  // .top-nav {
+  //   .logo {
+
+  //   }
+  //   .nav-links {
+  //   }
+  //   .nav-icons {
+  //   }
+  // }
+  // .search-pill1 {
+  // }
+  // .search-pill2 {
+  // }
 }

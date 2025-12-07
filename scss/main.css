@@ -119,7 +119,8 @@ h1 {
 }
 .card .card__img {
   height: 180px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card .card__body {
   padding: 1rem;
@@ -131,6 +132,4 @@ h1 {
   color: black;
   margin-top: 0.4rem;
   font-size: 0.9rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
