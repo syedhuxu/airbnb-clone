@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     gap: $fs-lg;
-    padding-left: 9rem;
+    // padding-left: 9rem;
 
     li {
       display: flex;
@@ -117,4 +117,62 @@
 
 .search-pill-secondary {
   display: none;
+}
+@media (max-width: $bp-lg) {
+  .top-nav {
+    padding: 0 $space-24;
+    .logo p {
+      display: none;
+    }
+  }
+  .nav-actions p {
+    display: none;
+  }
+}
+@media (max-width: $bp-md) {
+  .site-header .container {
+    padding: $space-16 $space-40 $space-12 $space-40;
+  }
+  .top-nav {
+    height: 55px;
+    order: 2;
+    .logo,
+    .nav-actions {
+      display: none;
+    }
+    .nav-links {
+      padding: 0;
+      width: 100%;
+      justify-content: space-between;
+      li {
+        flex-direction: column;
+        img {
+          width: 5rem;
+        }
+      }
+    }
+  }
+  .search-pill-main {
+    display: none;
+  }
+  .search-pill-secondary {
+    order: 1;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    gap: $space-16;
+    border-radius: 40px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.07);
+    padding: $space-32;
+    border: none;
+
+    p,
+    i {
+      font-size: $fs-xl;
+    }
+  }
 }

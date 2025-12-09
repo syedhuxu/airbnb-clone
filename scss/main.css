@@ -35,6 +35,8 @@ a {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 body {
@@ -117,7 +119,6 @@ h1 {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  padding-left: 9rem;
 }
 .top-nav .nav-links li {
   display: flex;
@@ -191,4 +192,62 @@ h1 {
 
 .search-pill-secondary {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  .top-nav {
+    padding: 0 1.5rem;
+  }
+  .top-nav .logo p {
+    display: none;
+  }
+  .nav-actions p {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .site-header .container {
+    padding: 1rem 2.5rem 0.75rem 2.5rem;
+  }
+  .top-nav {
+    height: 55px;
+    order: 2;
+  }
+  .top-nav .logo,
+  .top-nav .nav-actions {
+    display: none;
+  }
+  .top-nav .nav-links {
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .top-nav .nav-links li {
+    flex-direction: column;
+  }
+  .top-nav .nav-links li img {
+    width: 5rem;
+  }
+  .search-pill-main {
+    display: none;
+  }
+  .search-pill-secondary {
+    order: 1;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    gap: 1rem;
+    border-radius: 40px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.07);
+    padding: 2rem;
+    border: none;
+  }
+  .search-pill-secondary p,
+  .search-pill-secondary i {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
