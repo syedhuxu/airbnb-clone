@@ -1,19 +1,88 @@
-// colors
-$color-white: #ffffff;
-$color-black: #0f1720;
-$color-muted: #f7f7f7;
+// Brand Colors
 $color-primary: #ff385c;
-$color-text: #222;
+$color-primary-dark: #e01f49;
 
-// spacing scale
-$space-sm: 0.5rem;
-$space-md: 1rem;
-$space-lg: 1.5rem;
-$space-xl: 2rem;
+// Neutral Palette
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray-50: #f7f7f7;
+$color-gray-100: #eeeeee;
+$color-gray-200: #dddddd;
+$color-gray-300: #cccccc;
+$color-gray-400: #aaaaaa;
+$color-gray-500: #888888;
+$color-gray-600: #666666;
+$color-gray-700: #444444;
+$color-gray-800: #222222;
 
-// breakpoints (mobile-first)
+// Text Colors
+$color-text-primary: #222222;
+$color-text-secondary: #717171;
+$color-text-muted: #9a9a9a;
+
+// Backgrounds
+$color-bg: #ffffff;
+$color-bg-muted: #f7f7f7;
+$color-bg-dark: #111111;
+
+// Borders
+$color-border: #dddddd;
+$color-border-dark: #2d2d2d44;
+
+// spacing
+$space-2: 0.125rem; // 2px
+$space-4: 0.25rem; // 4px
+$space-8: 0.5rem; // 8px
+$space-12: 0.75rem; // 12px
+$space-16: 1rem; // 16px
+$space-20: 1.25rem; // 20px
+$space-24: 1.5rem; // 24px
+$space-32: 2rem; // 32px
+$space-40: 2.5rem; // 40px
+$space-48: 3rem; // 48px
+$space-64: 4rem; // 64px
+
+// typography
+// Font Family
+$font-primary: "Airbnb Cereal", "Inter", "Helvetica", sans-serif;
+
+// Font Sizes (rem-based)
+$fs-xs: 0.75rem; // 12px
+$fs-sm: 0.875rem; // 14px
+$fs-base: 1rem; // 16px
+$fs-md: 1.125rem; // 18px
+$fs-lg: 1.25rem; // 20px
+$fs-xl: 1.5rem; // 24px
+$fs-2xl: 2rem; // 32px
+$fs-3xl: 2.5rem; // 40px
+
+// Line Heights
+$lh-tight: 1.1;
+$lh-normal: 1.4;
+$lh-relaxed: 1.6;
+
+// breakpoints
+$bp-sm: 600px;
 $bp-md: 768px;
 $bp-lg: 1024px;
+$bp-xl: 1280px;
 
-$max-width: 1200px;
-$radius: 12px;
+// max width
+$max-width: 1280px;
+$container-padding: 1.5rem;
+
+// border-radius
+$radius-sm: 6px;
+$radius-md: 12px; // good for pills
+$radius-lg: 20px;
+$radius-full: 9999px; // fully rounded
+
+// shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.12);
+
+// heights
+$header-height: 80px;
+$nav-height-mobile: 60px;
+$nav-height-desktop: 80px;

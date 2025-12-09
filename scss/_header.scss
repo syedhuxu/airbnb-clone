@@ -1,19 +1,120 @@
 .site-header {
-  border-bottom: 1px solid #eee;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  // .top-nav {
-  //   .logo {
+  align-items: center;
+  border-bottom: 1px solid $color-border-dark;
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-20;
+    padding-bottom: $space-64;
+  }
+}
+.top-nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $space-48;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    font-size: 2.25rem;
+    font-weight: 600;
+    font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont,
+      Roboto, "Helvetica Neue", sans-serif;
+    color: rgb(255, 56, 92);
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: $fs-lg;
+    padding-left: 9rem;
 
-  //   }
-  //   .nav-links {
-  //   }
-  //   .nav-icons {
-  //   }
-  // }
-  // .search-pill1 {
-  // }
-  // .search-pill2 {
-  // }
+    li {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+
+      p {
+        opacity: 0.8;
+        font-weight: 500;
+      }
+
+      img {
+        width: 7.6rem;
+      }
+    }
+  }
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: $fs-lg;
+    padding-right: $space-16;
+    p {
+      font-size: $fs-xl;
+      font-weight: 600;
+      opacity: 0.89;
+    }
+    i {
+      font-size: 1.75rem;
+      cursor: pointer;
+      padding: $space-20;
+      background-color: #f5f5f5;
+      border-radius: 50%;
+      font-weight: 500;
+    }
+  }
+}
+
+.search-pill-main {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.07);
+  padding: 0 $space-20;
+
+  div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 40px;
+    padding: $space-20 $space-16;
+
+    p {
+      font-size: $fs-xl;
+      font-weight: 600;
+      color: #555;
+    }
+
+    span {
+      font-size: $fs-xl;
+      color: #333;
+      opacity: 0.88;
+    }
+  }
+
+  i {
+    background-color: rgb(255, 56, 92);
+    color: #fff;
+    padding: 1.75rem;
+    border-radius: 50%;
+    font-size: $fs-xl;
+    font-weight: 600;
+  }
+}
+
+.search-pill-secondary {
+  display: none;
 }
