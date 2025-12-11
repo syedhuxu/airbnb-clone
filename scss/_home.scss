@@ -1,0 +1,190 @@
+.listing-section {
+  width: 100%;
+  margin-top: $space-32; // 2rem gap above sections
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: $space-16;
+
+    .section-title {
+      font-size: 1.77rem;
+      font-weight: 600;
+      color: $color-text-primary;
+      line-height: $lh-tight;
+      padding: 0 $space-40;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  /* HORIZONTAL SCROLL (MOBILE-FIRST) */
+  .listing-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: $space-16;
+    overflow-x: auto;
+    padding-bottom: $space-8;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .listing-card {
+      width: 14rem;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      cursor: pointer;
+
+      .card-img {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        border-radius: $radius-lg;
+        overflow: hidden;
+        background: $color-gray-100;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        .wishlist-btn {
+          position: absolute;
+          top: $space-8;
+          right: $space-8;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          transition: 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 $space-12;
+
+          i {
+            font-size: $fs-3xl;
+            color: $color-text-white;
+          }
+          .badge {
+            background: $color-white;
+            padding: $space-8 $space-12;
+            font-size: $fs-xs;
+            font-weight: 600;
+            border-radius: $radius-sm;
+            color: $color-text-primary;
+          }
+        }
+      }
+
+      .card-info {
+        margin-top: $space-8;
+
+        .card-title {
+          font-size: $fs-lg;
+          font-weight: 600;
+          color: $color-text-primary;
+          margin-bottom: 2px;
+          line-height: $lh-tight;
+        }
+
+        .card-sub {
+          font-size: $fs-base;
+          color: $color-text-secondary;
+          line-height: $lh-normal;
+        }
+      }
+    }
+    .listing-card:first-child {
+      margin-left: $space-40;
+    }
+    .listing-card:last-child {
+      margin-right: $space-40;
+    }
+  }
+}
+
+@media (min-width: $bp-md) {
+  .listing-section {
+    margin-top: $space-32;
+
+    .section-header .section-title {
+      font-size: $fs-xl;
+      padding: 0 $space-20;
+    }
+
+    .listing-cards {
+      gap: $space-20;
+
+      .listing-card {
+        width: 17.5rem;
+        margin-left: 0;
+
+        .card-img {
+          height: 170px;
+        }
+
+        .card-info {
+          .card-title {
+            font-size: $fs-lg;
+          }
+          .card-sub {
+            font-size: $fs-sm;
+          }
+        }
+      }
+
+      .listing-card:first-child {
+        margin-left: $space-20;
+      }
+    }
+  }
+}
+
+@media (min-width: $bp-lg) {
+  .listing-section {
+    margin-top: $space-40;
+
+    .section-header .section-title {
+      font-size: $fs-2xl;
+      padding: 0 $space-48;
+    }
+
+    .listing-cards {
+      gap: $space-32;
+
+      .listing-card {
+        width: 20.5rem;
+
+        .card-img {
+          height: 180px;
+          .wishlist-btn {
+            padding: 0 $space-20;
+            .badge {
+              padding: $space-8 $space-16;
+              font-size: $fs-md;
+              border-radius: 40px;
+            }
+          }
+        }
+
+        .card-info {
+          .card-title {
+            font-size: $fs-xl;
+          }
+          .card-sub {
+            font-size: $fs-md;
+          }
+        }
+      }
+
+      .listing-card:first-child {
+        margin-left: $space-40; // matches section title indentation
+      }
+    }
+  }
+}

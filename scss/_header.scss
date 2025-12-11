@@ -118,6 +118,11 @@
 .search-pill-secondary {
   display: none;
 }
+@media (max-width: 900px) {
+  .search-pill-main {
+    max-width: 750px;
+  }
+}
 @media (max-width: $bp-lg) {
   .top-nav {
     padding: 0 $space-24;
