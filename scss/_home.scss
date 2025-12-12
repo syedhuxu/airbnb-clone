@@ -67,6 +67,7 @@
           padding: 0 $space-12;
 
           i {
+            align-self: flex-end;
             font-size: $fs-3xl;
             color: $color-text-white;
           }
@@ -104,6 +105,9 @@
     }
     .listing-card:last-child {
       margin-right: $space-40;
+    }
+    .listing-card:nth-child(2n) .badge span {
+      visibility: hidden;
     }
   }
 }
